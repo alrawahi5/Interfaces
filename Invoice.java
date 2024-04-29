@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.List;
 
 public interface Invoice {
@@ -11,7 +12,10 @@ public interface Invoice {
     }
     String items(List<String> items);
     Integer quantity();
-    void date();
+    default void date(){
+        Date date = new Date();
+        System.out.println("Date is: " + date);
+    }
     void paidAmount();
     void balance();
 }

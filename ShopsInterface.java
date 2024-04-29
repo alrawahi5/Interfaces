@@ -1,6 +1,4 @@
-import javax.swing.plaf.IconUIResource;
-
-public interface Shops {
+public interface ShopsInterface {
 
     default Integer id(Integer id) {
         id = 1;

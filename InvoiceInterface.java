@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.List;
 
-public interface Invoice {
+public interface InvoiceInterface {
     default Integer id(Integer id) {
         id = 1;
         for (int i = 1; i <= 100; i++) {

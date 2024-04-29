@@ -1,4 +1,4 @@
-public interface Item {
+public interface ItemInterface {
 
     default Integer id(Integer id) {
         id = 1;

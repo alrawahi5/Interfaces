@@ -10,12 +10,21 @@ public interface Invoice {
         }
         return id;
     }
+
+    String customerFullname();
+
     String items(List<String> items);
+
     Integer quantity();
-    default void date(){
+
+    default void date() {
         Date date = new Date();
         System.out.println("Date is: " + date);
     }
+
+    void totalAmmount();
+
     void paidAmount();
+
     void balance();
 }

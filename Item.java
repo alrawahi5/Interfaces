@@ -8,7 +8,10 @@ public interface Item {
         }
         return id;
     }
+
     Integer quantity();
+
     String name();
+
     Integer price();
 }
